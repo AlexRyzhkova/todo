@@ -1,7 +1,44 @@
 {
   "wedding": [
-    { "id": 0, "task": "Location finden" },
-    { "id": 1, "task": "Datum aussuchen" },
-    { "id": 2, "task": "Save the date rausschicken" }
+    {
+      "id": 0,
+      "task": "Location finden"
+    },
+    {
+      "id": 1,
+      "task": "Datum aussuchen"
+    },
+    {
+      "id": 2,
+      "task": "Save the date rausschicken"
+    },
+    {
+      "task": "Deko aussuchen",
+      "id": 3
+    },
+    {
+      "task": "Deko aussuchen",
+      "id": 4
+    },
+    {
+      "task": "Deko aussuchen",
+      "id": 5
+    },
+    {
+      "task": "Deko aussuchen",
+      "id": 6
+    },
+    {
+      "task": "Deko aussuchen",
+      "id": 7
+    },
+    {
+      "task": "Deko aussuchen",
+      "id": 8
+    },
+    {
+      "task": "Deko aussuchen",
+      "id": 9
+    }
   ]
 }
