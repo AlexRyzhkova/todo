@@ -1,5 +1,5 @@
 export default async function fetchToDos() {
-  const response = await fetch("http://localhost:3000/wedding");
+  const response = await fetch("http://localhost:3333/wedding");
   if (!response.ok) {
     throw new Error(response);
   }

@@ -15,7 +15,7 @@ function App() {
   }, []);
 
   function addToDo() {
-    postToDo().then(doFetch);
+    postToDo("DJ finden").then(doFetch);
   }
 
   return (
@@ -23,6 +23,7 @@ function App() {
       {toDos?.map((todo) => (
         <h3 key={todo.id}>{todo.task}</h3>
       ))}
+      <input placeholder="new ToDo" />
       <button onClick={addToDo}>Click me</button>
     </div>
   );
