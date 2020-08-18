@@ -1,0 +1,7 @@
+{
+  "wedding": [
+    { "id": 0, "task": "Location finden" },
+    { "id": 1, "task": "Datum aussuchen" },
+    { "id": 2, "task": "Save the date rausschicken" }
+  ]
+}
