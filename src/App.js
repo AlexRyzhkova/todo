@@ -1,32 +1,22 @@
 import React from "react";
 import "./App.css";
-import fetchToDos from "./api/fetchToDos";
-import postToDo from "./api/postToDo";
+
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import AddTask from "./pages/AddTask";
+import Home from "./pages/Home";
 
 function App() {
-  const [toDos, setToDos] = React.useState(null);
-
-  // tasks neuladen und setTask ausführen
-  async function doFetch() {
-    const fetchData = await fetchToDos();
-    setToDos(fetchData);
-  }
-  React.useEffect(() => {
-    doFetch();
-  }, []);
-
-  function addToDo() {
-    postToDo("DJ finden").then(doFetch);
-  }
-
   return (
-    <div>
-      {toDos?.map((todo) => (
-        <h3 key={todo.id}>{todo.task}</h3>
-      ))}
-      <input placeholder="new ToDo" />
-      <button onClick={addToDo}>Click me</button>
-    </div>
+    <Router>
+      <Switch>
+        <Route path="/add">
+          <AddTask />
+        </Route>
+        <Route path="/">
+          <Home />
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 

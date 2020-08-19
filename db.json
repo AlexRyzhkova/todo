@@ -2,22 +2,27 @@
   "wedding": [
     {
       "id": 0,
+      "titel": "Location",
       "task": "Location finden"
     },
     {
       "id": 1,
+      "titel": "Datum",
       "task": "Datum aussuchen"
     },
     {
       "id": 2,
+      "titel": "Save the date",
       "task": "Save the date rausschicken"
     },
     {
       "task": "Deko aussuchen",
+      "titel": "Deko",
       "id": 3
     },
     {
       "task": "DJ finden",
+      "titel": "DJ",
       "id": 4
     }
   ]
