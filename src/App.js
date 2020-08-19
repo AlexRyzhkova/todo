@@ -6,6 +6,7 @@ import postToDo from "./api/postToDo";
 function App() {
   const [toDos, setToDos] = React.useState(null);
 
+  // tasks neuladen und setTask ausführen
   async function doFetch() {
     const fetchData = await fetchToDos();
     setToDos(fetchData);
