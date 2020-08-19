@@ -1,0 +1,24 @@
+{
+  "wedding": [
+    {
+      "id": 0,
+      "task": "Location finden"
+    },
+    {
+      "id": 1,
+      "task": "Datum aussuchen"
+    },
+    {
+      "id": 2,
+      "task": "Save the date rausschicken"
+    },
+    {
+      "task": "Deko aussuchen",
+      "id": 3
+    },
+    {
+      "task": "DJ finden",
+      "id": 4
+    }
+  ]
+}
