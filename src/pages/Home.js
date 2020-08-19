@@ -16,7 +16,7 @@ function Home() {
 
   return (
     <>
-      <Link to="/">Add Task</Link>
+      <Link to="/add">Add Task</Link>
       {toDos?.map((todo) => (
         <h3 key={todo.id}>{todo.task}</h3>
       ))}

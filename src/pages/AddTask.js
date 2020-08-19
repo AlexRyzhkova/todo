@@ -3,19 +3,23 @@ import { Link } from "react-router-dom";
 import postToDo from "../api/postToDo";
 
 function AddTask() {
-  function addToDo() {
-    postToDo("DJ finden");
-  }
-  const [title, setTitel] = React.useState("");
+  // function addToDo() {
+  //   postToDo("DJ finden");
+  // }
+  const [title, setTitle] = React.useState("");
+  // const [task, setTitle] = React.useState("");
 
   function handleTitelChange(event) {
-    setTitel(event.target.value);
+    setTitle(event.target.value);
   }
 
-  function handleSubmit(event) {
+  async function handleSubmit(event) {
     event.preventDefault();
-    alert("Submitted" + title);
-    console.log(title);
+    const todo = {
+      task: title,
+    };
+    await postToDo(todo);
+    setTitle("");
   }
 
   return (
@@ -23,17 +27,18 @@ function AddTask() {
       <form onSubmit={handleSubmit}>
         <label>
           Titel:
-          <input
-            type="text"
-            name="titel"
-            value={title}
-            onChange={handleTitelChange}
-          />
+          <input name="title" value={title} onChange={handleTitelChange} />
         </label>
+
+        {/* <label>
+          Titel:
+          <input name="task" value={task} onChange={handleTaskChange} />
+        </label> */}
+
         <input type="submit" value="Add task" />
       </form>
 
-      <Link to="/add">Tasks</Link>
+      <Link to="/">Tasks</Link>
     </>
   );
 }
