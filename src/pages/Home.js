@@ -6,23 +6,6 @@ import useAsync from "../hooks/useAsync";
 function Home() {
   const { data: toDos, loading, error } = useAsync(fetchToDos);
 
-  // // tasks neuladen und setTask ausführen
-  // async function doFetch() {
-  //   try {
-  //     setLoading(true);
-  //     setError(false);
-  //     const fetchData = await fetchToDos();
-  //     setToDos(fetchData);
-  //   } catch (error) {
-  //     setError(true);
-  //   } finally {
-  //     setLoading(false);
-  //   }
-  // }
-  // React.useEffect(() => {
-  //   doFetch();
-  // }, []);
-
   return (
     <>
       <Link to="/add">Add Task</Link>
